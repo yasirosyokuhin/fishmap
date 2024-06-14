@@ -3,7 +3,7 @@
   "majorDimension": "ROWS",
   "values": [
     [
-      "タイムスタンプ",
+      "d",
       "カテゴリ",
       "画像",
       "緯度",
@@ -18,7 +18,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Osobetsu_River_and_Road_Route_238.jpg/640px-Osobetsu_River_and_Road_Route_238.jpg",
+      "",
       "44.3552",
       "142.142",
       "オソベツ川",
@@ -27,7 +27,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sarobetsugenya08n3200.jpg/640px-Sarobetsugenya08n3200.jpg",
+      "",
       "45.0839",
       "141.7841",
       "サロベツ川",
@@ -36,7 +36,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Chibaberi-gawa_2012-8-19.jpg/640px-Chibaberi-gawa_2012-8-19.jpg",
+      "",
       "44.8128",
       "142.2776",
       "チバベリ川",
@@ -54,7 +54,7 @@
     [
       "#######",
       "北海道",
-      "https://www.hkd.mlit.go.jp/ks/joho/kasenb/jyoukyou/ichiran/pdf/01_yoichi_00.jpg",
+      "",
       "43.1917",
       "140.7614",
       "余市川",
@@ -63,7 +63,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/9/97/Lake_Toyoni_and_Mount_Tokachi_from_Mount_Furano_Nishi_dake_2013-08-01.jpg",
+      "",
       "42.9317",
       "142.8892",
       "利別川",
@@ -72,7 +72,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tokachi_river.jpg/640px-Tokachi_river.jpg",
+      "",
       "42.52",
       "143.2",
       "十勝川",
@@ -81,7 +81,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Chitose_River_Kyukotsu-kyo_Bridge.JPG",
+      "",
       "43.0589",
       "141.4142",
       "千歳川",
@@ -90,7 +90,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Nayoro_River_from_Tenka-kyo_Bridge.jpg/640px-Nayoro_River_from_Tenka-kyo_Bridge.jpg",
+      "",
       "44.3543",
       "142.4667",
       "名寄川",
@@ -99,7 +99,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/3/39/Tohkanbetsu_River_Oyunumagawa_Dam.jpg",
+      "",
       "43.0003",
       "141.5867",
       "問寒別川",
@@ -108,7 +108,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Yubari_River_and_Mount_Yubari.jpg/640px-Yubari_River_and_Mount_Yubari.jpg",
+      "",
       "43.0833",
       "141.9833",
       "夕張川",
@@ -117,7 +117,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Teshio-gawa_in_Toyotomi.jpg/640px-Teshio-gawa_in_Toyotomi.jpg",
+      "",
       "44.9167",
       "142.3833",
       "天塩川",
@@ -126,7 +126,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Shiribetsugawa01.jpg/800px-Shiribetsugawa01.jpg",
+      "",
       "42.7508",
       "140.9828",
       "尻別川",
@@ -135,7 +135,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tokoro-gawa.jpg/800px-Tokoro-gawa.jpg",
+      "",
       "44.0536",
       "144.145",
       "常呂川",
@@ -144,7 +144,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ikushunbetsu_River_Shiokaribetsu-bashi_Bridge_2015-07-18.jpg/640px-Ikushunbetsu_River_Shiokaribetsu-bashi_Bridge_2015-07-18.jpg",
+      "",
       "43.0625",
       "141.9817",
       "幾春別川",
@@ -162,7 +162,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Chubetsu-gawa_from_Heiwa-bashi_Bridge.jpg/640px-Chubetsu-gawa_from_Heiwa-bashi_Bridge.jpg",
+      "",
       "43.8117",
       "142.4967",
       "忠別川",
@@ -171,7 +171,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shin-kushiro-gawa_in_Kushiro.jpg/640px-Shin-kushiro-gawa_in_Kushiro.jpg",
+      "",
       "43.0661",
       "144.3822",
       "新釧路川",
@@ -189,7 +189,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Eaglenest_lake_nagayama_dam.jpg",
+      "",
       "42.8844",
       "141.7192",
       "永山新川",
@@ -198,7 +198,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Saru-gawa_in_Hidaka.jpg/800px-Saru-gawa_in_Hidaka.jpg",
+      "",
       "42.6089",
       "142.0319",
       "沙流川",
@@ -207,7 +207,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Urahorotokachi_River_in_Urahoro.jpg",
+      "",
       "42.8094",
       "143.7117",
       "浦幌十勝川",
@@ -225,7 +225,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/2/21/Yubetsu-gawa_Rivermouth_from_Road_Route_242.jpg",
+      "",
       "44.0369",
       "143.79",
       "湧別川",
@@ -252,7 +252,7 @@
     [
       "#######",
       "北海道",
-      "https://livedoor.blogimg.jp/kita14_hokkaido/imgs/0/3/038414d3-s.jpg",
+      "",
       "43.9931",
       "141.6658",
       "留萌川",
@@ -279,7 +279,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Abashiri_River_from_Road_Route_39.jpg/640px-Abashiri_River_from_Road_Route_39.jpg",
+      "",
       "44.015",
       "144.2833",
       "網走川",
@@ -306,7 +306,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/Toyohira_River_from_Toyohira-bashi_Bridge.jpg",
+      "",
       "43.05",
       "141.3667",
       "豊平川",
@@ -324,7 +324,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Uryu_River_from_Sunagawa-ohashi_Bridge.jpg/640px-Uryu_River_from_Sunagawa-ohashi_Bridge.jpg",
+      "",
       "43.5971",
       "141.9158",
       "雨竜川",
@@ -342,7 +342,7 @@
     [
       "#######",
       "北海道",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Mu_River_in_Mukawa.jpg/640px-Mu_River_in_Mukawa.jpg",
+      "",
       "42.7317",
       "141.8928",
       "鵡川",
