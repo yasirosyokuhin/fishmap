@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', Meiryo, sans-serif;
+  background: linear-gradient(170deg, #0b4f6c 0%, #01a7c2 100%);
+  min-height: 100vh;
+  color: #1f3344;
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
+
+.app-header {
+  text-align: center;
+  color: #fff;
+  margin: 8px 0 16px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.92;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.control {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.control select {
+  font-size: 0.9rem;
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: 1px solid #b8c6d1;
+  background: #fff;
+}
+
+.btn {
+  font-size: 0.9rem;
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: 1px solid #b8c6d1;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn:hover {
+  background: #eef4f8;
+}
+
+.btn.primary {
+  background: #0b6e99;
+  border-color: #0b6e99;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #0a5e83;
+}
+
+.timer {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 3.2em;
+  text-align: right;
+}
+
+.message {
+  margin: 12px auto 0;
+  max-width: 560px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.message.ok {
+  background: #e3f6e8;
+  color: #1c7a3d;
+}
+
+.message.ng {
+  background: #fdebea;
+  color: #c0392b;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.board-wrap,
+.clues {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.board-wrap {
+  flex: 1 1 380px;
+  overflow-x: auto;
+}
+
+.clues {
+  flex: 1 1 280px;
+}
+
+.clues h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.howto {
+  font-size: 0.78rem;
+  color: #5b7185;
+  margin: 6px 0;
+}
+
+#clue-list {
+  margin: 8px 0 0;
+  padding-left: 24px;
+}
+
+#clue-list li {
+  margin: 7px 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  cursor: pointer;
+  user-select: none;
+}
+
+#clue-list li.done {
+  text-decoration: line-through;
+  color: #a3b3c0;
+}
+
+/* ===== 推理グリッド ===== */
+
+.grid {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.grid th,
+.grid td {
+  border: 1px solid #c6d3dd;
+  padding: 0;
+}
+
+.grid .corner {
+  border: none;
+  background: transparent;
+}
+
+.grid .col-head {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 0;
+  min-width: 40px;
+  height: 86px;
+  background: #eaf3f8;
+  vertical-align: bottom;
+}
+
+.grid .row-head {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: right;
+  padding: 0 8px;
+  background: #eaf3f8;
+  white-space: nowrap;
+}
+
+.grid .block-start {
+  border-left: 3px solid #50708a;
+}
+
+.grid tr.block-top th,
+.grid tr.block-top td {
+  border-top: 3px solid #50708a;
+}
+
+.cell {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #fff;
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cell:hover {
+  background: #f0f7fb;
+}
+
+.cell.maru {
+  color: #1c7a3d;
+  font-weight: 700;
+  background: #ecf9f0;
+}
+
+.cell.batsu {
+  color: #b6c2cc;
+}
+
+.maru {
+  color: #1c7a3d;
+  font-weight: 700;
+}
+
+.batsu {
+  color: #8a99a6;
+}
+
+/* ===== クリア時のオーバーレイ ===== */
+
+.overlay[hidden] {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 40, 58, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 10;
+}
+
+.overlay-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 36px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.overlay-emoji {
+  font-size: 2.4rem;
+}
+
+.overlay-card h2 {
+  margin: 8px 0;
+  font-size: 1.5rem;
+}
+
+.overlay-card p {
+  margin: 0 0 18px;
+  color: #50708a;
+}
+
+@media (max-width: 480px) {
+  .cell {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .grid .col-head {
+    min-width: 32px;
+    height: 74px;
+    font-size: 0.72rem;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="手がかりをもとに、だれが・どの魚を・どこで釣ったかを推理するロジックパズル">
+  <title>つりロジック – 推理ロジックパズル</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>🎣 つりロジック</h1>
+      <p class="subtitle">手がかりをもとに、だれが・どの魚を・どこで釣ったかを推理しよう</p>
+    </header>
+
+    <div class="toolbar">
+      <label class="control">
+        むずかしさ
+        <select id="difficulty">
+          <option value="easy">かんたん（3×3）</option>
+          <option value="normal" selected>ふつう（4×4）</option>
+          <option value="hard">むずかしい（5×5）</option>
+        </select>
+      </label>
+      <button id="new-game" class="btn primary">新しい問題</button>
+      <button id="check" class="btn">答え合わせ</button>
+      <button id="hint" class="btn">ヒント</button>
+      <label class="control checkbox">
+        <input type="checkbox" id="autocross" checked> ○で自動✕
+      </label>
+      <span id="timer" class="timer">0:00</span>
+    </div>
+
+    <div id="message" class="message" hidden></div>
+
+    <main class="layout">
+      <section class="board-wrap">
+        <div id="board"></div>
+        <p class="howto">セルをタップすると <span class="maru">○</span> → <span class="batsu">✕</span> → 空白 の順に切り替わります。</p>
+      </section>
+      <section class="clues">
+        <h2>手がかり</h2>
+        <p class="howto">読み終えた手がかりはタップで消し込みできます。</p>
+        <ol id="clue-list"></ol>
+      </section>
+    </main>
+  </div>
+
+  <div id="win" class="overlay" hidden>
+    <div class="overlay-card">
+      <div class="overlay-emoji">🐟🎉</div>
+      <h2>正解！</h2>
+      <p id="win-stats"></p>
+      <button id="win-new-game" class="btn primary">新しい問題で遊ぶ</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
