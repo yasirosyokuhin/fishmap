@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#0b2a4a">
+<title>FISHMAP 釣りゲーム — リアル海釣りシミュレーター</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="game"></canvas>
+
+<!-- HUD -->
+<div id="hud" class="panel">
+  <div class="hud-row"><span class="hud-label">スコア</span><span id="score">0</span></div>
+  <div class="hud-row"><span class="hud-label">釣果</span><span id="count">0</span> 匹</div>
+  <div class="hud-row"><span class="hud-label">時刻</span><span id="clock">07:00</span></div>
+</div>
+
+<div id="top-buttons">
+  <button id="zukan-btn" class="icon-btn">図鑑</button>
+  <button id="mute-btn" class="icon-btn">♪ ON</button>
+</div>
+
+<!-- キャストパワーゲージ -->
+<div id="power-wrap" class="panel hidden">
+  <div class="gauge-label">キャストパワー</div>
+  <div class="gauge"><div id="power-bar"></div></div>
+</div>
+
+<!-- ファイトUI -->
+<div id="fight-ui" class="panel hidden">
+  <div class="gauge-label">ライン テンション</div>
+  <div class="gauge tension-gauge">
+    <div class="tension-zones"></div>
+    <div id="tension-bar"></div>
+  </div>
+  <div class="fight-meters">
+    <span id="line-dist">残り 0m</span>
+    <span id="fish-stamina">魚の体力 ●●●●●</span>
+  </div>
+  <div class="fight-hint">押す＝リールを巻く / 魚が走ったら手を離せ！</div>
+</div>
+
+<!-- メッセージ -->
+<div id="msg" class="hidden"></div>
+
+<!-- 釣果カード -->
+<div id="catch-card" class="overlay hidden">
+  <div class="card">
+    <div id="catch-badges"></div>
+    <h2 id="catch-name">マダイ</h2>
+    <canvas id="catch-canvas" width="280" height="140"></canvas>
+    <div id="catch-stats"></div>
+    <div id="catch-pts"></div>
+    <button id="catch-ok" class="big-btn">次を釣る</button>
+  </div>
+</div>
+
+<!-- 図鑑 -->
+<div id="zukan-modal" class="overlay hidden">
+  <div class="card zukan-card">
+    <h2>さかな図鑑</h2>
+    <div id="zukan-grid"></div>
+    <button id="zukan-close" class="big-btn">とじる</button>
+  </div>
+</div>
+
+<!-- タイトル -->
+<div id="title" class="overlay">
+  <div class="title-inner">
+    <h1>FISHMAP<br><span>リアル海釣りシミュレーター</span></h1>
+    <ul class="howto">
+      <li>🎣 <b>長押し</b>でパワーをため、<b>離して</b>キャスト</li>
+      <li>👀 ウキが<b>沈み込んだ瞬間</b>にタップしてアワセ！（早アワセ厳禁）</li>
+      <li>💪 ファイト中は<b>押してリールを巻く</b>。テンションが赤になったら手を離せ</li>
+      <li>🌙 時間帯で釣れる魚が変わる。夜行性の魚を狙え</li>
+      <li>🌊 遠くへ投げるほど深場の大物に出会えるかも…</li>
+    </ul>
+    <button id="start-btn" class="big-btn">釣りをはじめる</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
